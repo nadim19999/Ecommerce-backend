@@ -1,0 +1,36 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://vercel.com/nadims-projects",
+        "APP_KEY": "base64:CD82+WBkTELWHLZru1kgSkhGCENlxcNxOP0iy8OC83U=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "mysql-322418f9-boussarsarnadim-1999.c.aivencloud.com",
+        "DB_PORT": "22937",
+        "DB_DATABASE": "defaultdb",
+        "DB_USERNAME": "nadim",
+        "DB_PASSWORD": "AVNS_ahrjo4L4GIlhNTxR2-w"
+    }
+}
