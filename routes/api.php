@@ -17,6 +17,10 @@ Route::middleware('api')->group(function () {
     Route::resource('scategories', ScategorieController::class);
 });
 
+Route::middleware('api')->group(function () {
+    Route::resource('articles', ScategorieController::class);
+});
+
 /*
 Route::get('/categories', [CategorieController::class, 'index']);
 Route::post('/categories', [CategorieController::class, 'store']);

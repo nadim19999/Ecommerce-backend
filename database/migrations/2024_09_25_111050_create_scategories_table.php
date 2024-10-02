@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nomscategorie')->unique();
             $table->string('imagescategorie')->nullable();
-            $table->string('categorieID');
+            $table->unsignedBigInteger('categorieID');
             $table->foreign('categorieID')->references('id')->on('categories')->onDelete('restrict');
             $table->timestamps();
         });
